@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>GAME</title>
+</head>
+<body>
+  <script>
+    function makePhrases() {
+      var people =[
+        '陈泽宇','杨克琴','郭懿婷','陈欣楚','杨心怡','吴倩雯','龚佳怡','李可新','陆心怡',
+        '张璐','潘梦情','田金丰','葛梦蝶','刘祎婷','沈宇峰','王达','李一鸣','徐志豪','孙睿褀','徐杨',
+        '濮徐杰','陈卓豪','王昱','林超凡','孔易飞','王诚礼','杨凤旗','王韫韬','吴策','顾强','顾强','薛宇成',
+        '俞浩','陈李鹏','徐超','顾伟豪','王钦鹏','孙权','潘铖','朱铭杨','张程','杨吉'
+      ]
+      var time =[
+        '早上','中午','晚上','半夜','昨天','前天'
+      ]
+      var place =[
+        '在宿舍','在食堂','在教室','在操场','在浴室','在社团','在卫生间','在马路上'
+      ]
+      var activity =[
+        '睡觉','吃饭','上课','做运动','洗澡','打游戏','上厕所'
+      ]
+      var peopleRand = Math.floor(Math.random()*people.length);
+      var timeRand = Math.floor(Math.random()*time.length);
+      var placeRand =Math.floor(Math.random()*place.length);
+      var activityRand =Math.floor(Math.random()*activity.length);
+      var phrase = people[peopleRand]+""+time[timeRand]+""+place[placeRand]+""+activity[activityRand];
+      alert(phrase);
+    }
+    makePhrases();
+  </script>
+</body>
+</html>
